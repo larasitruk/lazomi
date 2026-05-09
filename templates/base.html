@@ -5,8 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{{ title }} | {{ config.title }}</title>
         <link rel="stylesheet" href="{{ prefix }}/style.css" />
+        <link rel="canonical" href="{{ config.base_url }}{{ page_path }}" />
+        <meta
+            name="description"
+            content="{% if page.description %}{{ page.description }}{% elif config.description %}{{ config.description }}{% else %}LAZOMI{% endif %}"
+        />
+        <!-- Open Graph -->
+        <meta property="og:title" content="{{ title }}" />
+        <meta
+            property="og:url"
+            content="{{ config.base_url | safe }}{{ page_path }}"
+        />
+        <meta property="og:site_name" content="{{ config.title }}" />
+        <meta
+            property="og:type"
+            content="{% if page.date %}article{% else %}website{% endif %}"
+        />
+        {% if page.description %}
+        <meta property="og:description" content="{{ page.description }}" />
+        {% elif config.description %}
+        <meta property="og:description" content="{{ config.description }}" />
+        {% endif %}
     </head>
     <body>
-        <main>{% block content %}{% endblock content %}</main>
+        <main class="markdown">{% block content %}{% endblock content %}</main>
     </body>
 </html>
