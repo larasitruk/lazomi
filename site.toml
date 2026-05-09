@@ -1,0 +1,12 @@
+title = "Lazomi"
+author = "Lara Sitruk"
+base_url = "https://lazomi.com"
+
+[paths]
+content = "content"
+output = "public"
+static = "static"
+templates = "templates"
+
+[nav]
+nested = false  # Show child pages under sections
