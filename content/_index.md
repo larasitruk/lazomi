@@ -1,8 +1,13 @@
++++
+title = "Lazomi | Artist Bio"
+description = "Lazomi is an artist based in Coimbra, Portugal. Creates embroidered tshirts, paintings, acquarel."
+lang = "en"
++++
 # Artist Bio
 
 ## A Little About Me
 
-Hi, I'm Lara Sitruk! I’m a Dutch-French artist currently based in beautiful Portugal. I feel like I've lived many lives.. traveling the globe, working across different industries, and crossing paths with so many fascinating people. Everywhere I go, I collect experiences, stories, and impressions, and these ultimately find their way into my artwork.
+Hi, I'm Lara Sitruk! I’m a Dutch-French artist currently based in beautiful Portugal. I feel like I've lived many lives traveling the globe, working across different industries, and crossing paths with so many fascinating people. Everywhere I go, I collect experiences, stories, and impressions, and these ultimately find their way into my artwork.
 
 ### Where to Find Me
 
@@ -16,7 +21,7 @@ I'd love to meet you! Come say hi at one of my upcoming events:
 
 As much as I love getting fully immersed in my studio for a new project, I’m equally passionate about sharing the joy of art with others! Whether we're collaborating on a piece, playing creative games to break out of our usual framing, or learning together in a workshop, I love helping people tap into their creativity.
 
-Growing up, I was surrounded by crafts. I learned macramé from my mother, weaving (my grandmother had a massive loom!), lino cutting inspired by my grandparents, and picked up painting, crochet, knitting, sewing, and embroidery along the way. I believe that learning a craft doesn't just result in beautiful, unique creations.. even more importantly, I find it also brings mindfulness and builds self-confidence.
+Growing up, I was surrounded by crafts. I learned macramé from my mother, weaving (my grandmother had a massive loom!), lino cutting inspired by my grandparents, and picked up painting, crochet, knitting, sewing, and embroidery along the way. I believe that learning a craft doesn't just result in beautiful, unique creations; even more importantly, I find it also brings mindfulness and builds self-confidence.
 
 You’re welcome to join my upcoming workshops. Just drop me a message to save your spot!
 
@@ -42,7 +47,7 @@ Today, sewing, embroidering, and upcycling clothes are some of my greatest passi
 
 My deep love and respect for nature are woven directly into my art. Many of my creations feature an imaginary animal world, which is my way of showing admiration for the natural world that has always been a refuge for me through both happy and challenging times.
 
-I do my best to embrace a vegan and low-waste lifestyle, celebrating the beauty of the animals, insects, plants, and trees around us. This mindset has sparked even deeper creativity in my life.. whether I'm in the kitchen experimenting with a new vegan recipe or in my studio breathing new life into discarded materials.
+I do my best to embrace a vegan and low-waste lifestyle, celebrating the beauty of the animals, insects, plants, and trees around us. This mindset has sparked even deeper creativity in my life, whether I'm in the kitchen experimenting with a new vegan recipe or in my studio breathing new life into discarded materials.
 
 ### Upcycling
 
