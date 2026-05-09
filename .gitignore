@@ -140,4 +140,5 @@ vite.config.ts.timestamp-*
 _site
 .direnv
 public
-static
+static/style.css
+result
