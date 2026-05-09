@@ -135,11 +135,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1775978347,
-        "narHash": "sha256-tSR9qVEHO7Izta+IO8qX6RbmooULIgs12jW1mIB/W5k=",
+        "lastModified": 1778341801,
+        "narHash": "sha256-ZwBBsQ3Qc1lvsBCqoWfr9VPhnC4zofn8SJRUz5YSCqY=",
         "owner": "woile",
         "repo": "sukr",
-        "rev": "9bfc38417e3232351f46a81657a78e6083fe6173",
+        "rev": "f02572ddd7b239cb4bcd8946850321f2c315ec47",
         "type": "github"
       },
       "original": {
