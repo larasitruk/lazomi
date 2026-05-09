@@ -3,7 +3,6 @@ title = "Lazomi | Artist Bio"
 description = "Lazomi is an artist based in Coimbra, Portugal. Creates embroidered tshirts, paintings, acquarel."
 lang = "en"
 +++
-# Artist Bio
 
 ## A Little About Me
 
@@ -15,9 +14,9 @@ After eight wonderful years in Amsterdam, I relocated to Coimbra in central Port
 
 I'd love to meet you! Come say hi at one of my upcoming events:
 
-• Coimbra Hype Market / 23 May 2026 / 10:00 - 19:00 / Casa-Museo Bissaya Barreto
+- Coimbra Hype Market / 23 May 2026 / 10:00 - 19:00 / Casa-Museo Bissaya Barreto
 
-### Sharing is Caring
+### Sharing Is Caring
 
 As much as I love getting fully immersed in my studio for a new project, I’m equally passionate about sharing the joy of art with others! Whether we're collaborating on a piece, playing creative games to break out of our usual framing, or learning together in a workshop, I love helping people tap into their creativity.
 
@@ -31,7 +30,7 @@ Looking for something more personal? I also host private workshops for groups or
 
 ### Combining Materials
 
-As a multi-disciplinary artist, I thrive on exploring new mediums, materials, and textures. I love experimenting and playing, letting my imagination run wild with every new discovery. This exploration makes me feel free.. a kid again, where mistakes and imperfections are just part of the learning adventure. Anything goes, nothing is a failure or a waste of time since the journey and experience is what truly matters.
+As a multidisciplinary artist, I thrive on exploring new mediums, materials, and textures. I love experimenting and playing, letting my imagination run wild with every new discovery. This exploration makes me feel free.. a kid again, where mistakes and imperfections are just part of the learning adventure. Anything goes, nothing is a failure or a waste of time since the journey and experience is what truly matters.
 
 While paper and black ink are my classic go-to materials, I love incorporating watercolors, acrylics, lino cuts, and stamps to build unique textures, colors, and effects. For me, the magic happens when I mix techniques to create something entirely new.
 
@@ -62,6 +61,5 @@ My dedication to the earth means I strive to maintain a sustainable workspace. I
 I'm always open to new projects, collaborations, or just a friendly hello. Let's connect!
 When I don’t forget about the internet, I try to share my creative process, what inspires me and my artistic experimentations online. You can find me on instagram.
 
-• Email: larasitruk@gmail.com
-
-• Instagram: instagram.com/lazomicreative
+- Email: [larasitruk@gmail.com](larasitruk@gmail.com)
+- Instagram: [instagram.com/lazomicreative](instagram.com/lazomicreative)
