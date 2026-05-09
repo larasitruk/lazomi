@@ -1,5 +1,5 @@
 +++
-title = "Lazomi | Artist Bio"
+title = "Lazomi"
 description = "Lazomi is an artist based in Coimbra, Portugal. Creates embroidered tshirts, paintings, acquarel."
 lang = "en"
 +++
@@ -40,6 +40,10 @@ Even as a young girl, I would sketch marvelous dresses straight from my imaginat
 
 Today, sewing, embroidering, and upcycling clothes are some of my greatest passions. It always amazes me how a pop of color, a clever design shift, or a small embroidered detail can drastically transform a look and tell a brand-new story.
 
+## Shop
+
+Under construction!
+
 ## Mission
 
 ### Nature Love
@@ -56,7 +60,7 @@ When I was little, my eyes were always glued to the ground, searching for hidden
 
 My dedication to the earth means I strive to maintain a sustainable workspace. I ensure that both my art and its packaging are as eco-friendly as possible. This commitment is a core pillar of Lazomi, as staying aligned with my values is what allows my creative work to truly thrive.
 
-# Contact
+## Contact
 
 I'm always open to new projects, collaborations, or just a friendly hello. Let's connect!
 When I don’t forget about the internet, I try to share my creative process, what inspires me and my artistic experimentations online. You can find me on instagram.

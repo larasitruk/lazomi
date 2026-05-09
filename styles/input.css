@@ -1,6 +1,74 @@
 @import "tailwindcss";
 
 @layer components {
+    body {
+        @apply bg-teal-100/60;
+    }
+
+    .topbar {
+        @apply sticky top-0 z-50 bg-teal-900 backdrop-blur-sm shadow-md;
+    }
+
+    .topbar-content {
+        @apply mx-auto max-w-3xl px-4 py-3 flex justify-between items-center;
+    }
+
+    .brand {
+        @apply font-bold text-xl tracking-tighter text-gray-100;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .btn-shop {
+        @apply relative overflow-hidden px-4 py-1.5 rounded-lg font-bold uppercase text-xs tracking-widest transition-all duration-300 text-teal-900 shadow-lg shadow-indigo-400/50 hover:shadow-indigo-400/50;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -150%;
+            left: -150%;
+            width: 400%;
+            height: 400%;
+            background: conic-gradient(
+                from 0deg,
+                #ff0000,
+                #ff7f00,
+                #ffff00,
+                #00ff00,
+                #0000ff,
+                #4b0082,
+                #8b00ff,
+                #ff0000
+            );
+            animation: rotate 4s linear infinite;
+            z-index: -2;
+        }
+
+        &::after {
+            content: "";
+            @apply absolute bg-white rounded-md transition-all duration-300;
+            inset: 2px;
+            z-index: -1;
+        }
+
+        &:hover {
+            @apply scale-110 text-gray-900;
+
+            &::after {
+                inset: 3px;
+                @apply blur-sm;
+            }
+        }
+    }
+
     .markdown {
         @apply mx-auto max-w-3xl px-4 py-8;
 

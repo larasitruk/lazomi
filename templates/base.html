@@ -28,6 +28,12 @@
         {% endif %}
     </head>
     <body>
+        <header class="topbar">
+            <div class="topbar-content">
+                <a href="{{ prefix }}/" class="brand">LAZOMI</a>
+                <a href="#shop" class="btn-shop">shop</a>
+            </div>
+        </header>
         <main class="markdown">{% block content %}{% endblock content %}</main>
     </body>
 </html>
