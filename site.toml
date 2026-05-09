@@ -1,6 +1,6 @@
 title = "Lazomi"
 author = "Lara Sitruk"
-base_url = "https://lazomi.com"
+base_url = "https://lazomi.studio"
 
 [paths]
 content = "content"
