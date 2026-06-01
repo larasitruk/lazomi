@@ -1,0 +1,47 @@
++++
+title = "Portfolio | Lazomi"
+description = "Lazomi is an artist based in Coimbra, Portugal. Creates embroidered tshirts, paintings, acquarel. This is her portfolio"
+lang = "en"
++++
+
+![portfolio image](/images/portfolio-20.jpg)
+
+![portfolio image](/images/portfolio-17.jpg)
+
+![portfolio image](/images/portfolio-3.jpg)
+
+![portfolio image](/images/portfolio-21.JPG)
+
+![portfolio image](/images/portfolio-19.JPG)
+
+![portfolio image](/images/portfolio-18.JPG)
+
+![portfolio image](/images/portfolio-16.JPG)
+
+![portfolio image](/images/portfolio-15.JPG)
+
+![portfolio image](/images/portfolio-14.JPG)
+
+![portfolio image](/images/portfolio-13.JPG)
+
+![portfolio image](/images/portfolio-12.JPG)
+
+![portfolio image](/images/portfolio-11.JPG)
+
+![portfolio image](/images/portfolio-10.JPG)
+
+![portfolio image](/images/portfolio-9.JPG)
+
+![portfolio image](/images/portfolio-8.JPG)
+
+![portfolio image](/images/portfolio-7.JPG)
+
+![portfolio image](/images/portfolio-6.JPG)
+
+![portfolio image](/images/portfolio-5.JPG)
+
+![portfolio image](/images/portfolio-4.JPG)
+
+![portfolio image](/images/portfolio-2.JPG)
+
+![portfolio image](/images/portfolio-1.JPG)

@@ -13,6 +13,14 @@
         @apply mx-auto max-w-3xl px-4 py-3 flex justify-between items-center;
     }
 
+    .topbar-nav {
+        @apply flex space-x-4;
+    }
+
+    .topbar-link {
+        @apply text-white underline hover:text-amber-300;
+    }
+
     .brand {
         @apply font-bold text-xl tracking-tighter text-gray-100;
     }
@@ -72,7 +80,11 @@
     .markdown {
         @apply mx-auto max-w-3xl px-4 py-8;
 
-        h1, h2, h3, h4, h5 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
             @apply scroll-mt-20;
         }
 
@@ -132,7 +144,11 @@
         }
 
         .heading-anchor {
-            @apply text-lg pl-3 opacity-50;
+            @apply text-lg pl-3 opacity-50 hidden;
+        }
+
+        img {
+            @apply border-2 bg-teal-900 rounded-lg;
         }
     }
 }

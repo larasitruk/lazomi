@@ -56,6 +56,7 @@
               tailwindcss-language-server
               watchexec
               mozjpeg
+              imagemagick
             ];
 
             shellHook = ''
