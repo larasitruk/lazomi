@@ -65,5 +65,5 @@ My dedication to the earth means I strive to maintain a sustainable workspace. I
 I'm always open to new projects, collaborations, or just a friendly hello. Let's connect!
 When I don’t forget about the internet, I try to share my creative process, what inspires me and my artistic experimentations online. You can find me on instagram.
 
-- Email: [larasitruk@gmail.com](larasitruk@gmail.com)
+- Email: [lazomicreative@gmail.com](lazomicreative@gmail.com)
 - Instagram: [instagram.com/lazomicreative](https://instagram.com/lazomicreative)
