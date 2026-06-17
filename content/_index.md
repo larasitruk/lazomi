@@ -45,6 +45,7 @@ Today, sewing, embroidering, and upcycling clothes are some of my greatest passi
 ## Shop
 
 The webshop will be open soon!
+
 [Contact me](#contact) if you're interested in a print.
 
 
@@ -69,5 +70,5 @@ My dedication to the earth means I strive to maintain a sustainable workspace. I
 I'm always open to new projects, collaborations, or just a friendly hello. Let's connect!
 When I don’t forget about the internet, I try to share my creative process, what inspires me and my artistic experimentations online. You can find me on instagram.
 
-- Email: [lazomicreative@gmail.com](lazomicreative@gmail.com)
+- Email: [lazomicreative@gmail.com](mailto:lazomicreative@gmail.com)
 - Instagram: [instagram.com/lazomicreative](https://instagram.com/lazomicreative)
