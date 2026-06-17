@@ -4,6 +4,8 @@ description = "Lazomi is an artist based in Coimbra, Portugal. Creates embroider
 lang = "en"
 +++
 
+![photo of me](/images/me1.jpg)
+
 ## A Little About Me
 
 Hi, I'm Lara Sitruk! I’m a Dutch-French artist currently based in beautiful Portugal. I feel like I've lived many lives traveling the globe, working across different industries, and crossing paths with so many fascinating people. Everywhere I go, I collect experiences, stories, and impressions, and these ultimately find their way into my artwork.
