@@ -42,7 +42,9 @@ Today, sewing, embroidering, and upcycling clothes are some of my greatest passi
 
 ## Shop
 
-Under construction!
+The webshop will be open soon!
+[Contact me](#contact) if you're interested in a print.
+
 
 ## Mission
 
