@@ -44,9 +44,7 @@ Today, sewing, embroidering, and upcycling clothes are some of my greatest passi
 
 ## Shop
 
-The webshop will be open soon!
-
-[Contact me](#contact) if you're interested in a print.
+Visit the webshop here![etsy.com/shop/LazomiCreative](https://www.etsy.com/shop/LazomiCreative)
 
 
 ## Mission
