@@ -36,7 +36,7 @@
     }
 
     .btn-shop {
-        @apply relative px-4 py-1.5 rounded-lg font-bold uppercase text-xs tracking-widest transition-all duration-300 text-teal-900 shadow-lg shadow-indigo-400/50 hover:shadow-indigo-400/90 hover:drop-shadow-2xl bg-white;
+        @apply relative px-4 py-1.5 rounded-lg font-bold uppercase text-xs tracking-widest transition-all duration-300 text-teal-900 shadow-lg shadow-indigo-400/50 hover:shadow-indigo-400/90 hover:drop-shadow-2xl bg-white active:drop-shadow-none active:translate-y-0.5 active:shadow-none;
         z-index: 10;
     }
     /**********************/
