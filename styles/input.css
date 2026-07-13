@@ -2,11 +2,12 @@
 
 @layer components {
     body {
-        @apply bg-teal-100/60;
+        @apply bg-[#8a3434] text-amber-50;
+        /*#8a3434*/
     }
 
     .topbar {
-        @apply sticky top-0 z-50 bg-teal-900 backdrop-blur-sm shadow-md;
+        @apply sticky top-0 z-50 bg-red-200 backdrop-blur-sm shadow-md;
     }
 
     .topbar-content {
@@ -18,11 +19,11 @@
     }
 
     .topbar-link {
-        @apply text-white underline hover:text-amber-300;
+        @apply text-gray-700 underline hover:text-gray-800;
     }
 
     .brand {
-        @apply font-bold text-xl tracking-tighter text-gray-100;
+        @apply font-bold text-xl tracking-tighter text-pink-700;
     }
 
     @keyframes rotate {
@@ -78,7 +79,7 @@
     }
 
     .markdown {
-        @apply mx-auto max-w-3xl px-4 py-8;
+        @apply mx-auto max-w-3xl px-4;
 
         h1,
         h2,
@@ -109,10 +110,10 @@
         }
 
         a {
-            @apply text-blue-600 underline transition-colors decoration-1 underline-offset-2;
+            @apply text-blue-400 underline transition-colors decoration-1 underline-offset-2;
 
             &:hover {
-                @apply text-blue-800 decoration-2;
+                @apply text-blue-500 decoration-2;
             }
         }
 
@@ -148,7 +149,7 @@
         }
 
         img {
-            @apply border-2 bg-teal-900 rounded-lg;
+            @apply border-2 bg-teal-900 rounded-lg md:max-w-2/3;
         }
     }
 }

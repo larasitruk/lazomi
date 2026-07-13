@@ -1,0 +1,164 @@
+{% extends "base.html" %} {% block content %}
+<main class="grid grid-rows-1 h-screen md:pb-4">
+    <div
+        class="grid grid-cols-1 place-items-stretch w-full mx-auto max-w-5xl h-full"
+    >
+        <div
+            class="grid grid-cols-2 md:grid-cols-3 place-items-stretch gap-4 md:gap-4 items-stretch pr-2 pb-2 pl-2"
+        >
+            <div class="col-span-2 md:col-span-3 grid place-items-center">
+                <div
+                    class="relative w-full h-full overflow-hidden group rounded-b-md"
+                >
+                    <img
+                        src="images/lazomi-block-bg.jpg"
+                        alt="Background"
+                        class="absolute inset-0 object-cover w-full h-full transition-all duration-500 ease-in-out group-hover:grayscale"
+                    />
+                    <div class="absolute inset-0 bg-black/50"></div>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center"
+                    >
+                        <div>
+                            <h1
+                                class="text-6xl md:text-8xl font-black text-white tracking-widest drop-shadow-lg select-none"
+                            >
+                                <a href="{{ prefix }}/">LAZOMI</a>
+                            </h1>
+                            <h2
+                                class="text-lg md:text-2xl font-black text-white text-center"
+                            >
+                                - Art inspired by nature -
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="bg-red-200 order-1 rounded-md transition hover:scale-105 duration-400 hover:drop-shadow-2xl hover:z-40"
+            >
+                <a href="{{ prefix }}/bio">
+                    <div
+                        class="relative w-full h-full overflow-hidden group rounded-md"
+                    >
+                        <img
+                            src="images/me1.jpg"
+                            alt="Background"
+                            class="absolute inset-0 object-cover w-full h-full transition-all duration-500 ease-in-out group-hover:grayscale"
+                        />
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div
+                            class="absolute inset-0 flex items-center justify-center"
+                        >
+                            <h2
+                                class="text-4xl md:text-6xl font-black text-white tracking-widest drop-shadow-lg select-none"
+                            >
+                                BIO
+                            </h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div
+                class="order-2 bg-red-200 group relative z-0 overflow-hidden overflow-x-hidden rounded-md h-full text-neutral-50 transition hover:scale-105 duration-400 hover:drop-shadow-2xl hover:z-40"
+            >
+                <a
+                    href="https://www.etsy.com/shop/LazomiCreative"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-full"
+                >
+                    <div class="grid place-items-center h-full z-10">
+                        <h2
+                            class="text-2xl md:text-6xl font-black text-white tracking-widest drop-shadow-lg select-none z-10"
+                        >
+                            SHOP
+                        </h2>
+                    </div>
+                    ><span class="absolute inset-0 overflow-hidden rounded-md"
+                        ><span
+                            class="absolute left-0 aspect-square w-full origin-center md:origin-top-right translate-x-full rounded-full bg-blue-500 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-200"
+                        ></span
+                    ></span>
+                </a>
+            </div>
+            <div
+                class="bg-red-200 order-6 rounded-md md:order-3 transition hover:scale-105 duration-400 hover:drop-shadow-2xl hover:z-40"
+            >
+                <a href="{{ prefix }}/portfolio">
+                    <div
+                        class="relative w-full h-full overflow-hidden group rounded-md"
+                    >
+                        <img
+                            src="images/pf-bg.jpg"
+                            alt="Background"
+                            class="absolute inset-0 object-cover w-full h-full transition-all duration-500 ease-in-out group-hover:grayscale"
+                        />
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div
+                            class="absolute inset-0 flex items-center justify-center"
+                        >
+                            <h2
+                                class="text-xl md:text-4xl font-black text-white tracking-widest drop-shadow-lg select-none"
+                            >
+                                PORTFOLIO
+                            </h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div
+                class="order-4 bg-red-200 group relative z-0 overflow-hidden overflow-x-hidden rounded-md h-full text-neutral-50 transition hover:scale-105 duration-400 hover:drop-shadow-2xl hover:z-40"
+            >
+                <a href="{{ prefix }}/mission" class="w-full">
+                    <div class="grid place-items-center h-full z-10">
+                        <h2
+                            class="text-2xl md:text-5xl font-black text-white tracking-widest drop-shadow-lg select-none z-10"
+                        >
+                            MISSION
+                        </h2>
+                    </div>
+                    ><span class="absolute inset-0 overflow-hidden rounded-md"
+                        ><span
+                            class="absolute left-0 aspect-square w-full origin-center md:origin-top-left translate-x-full rounded-full bg-blue-500 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-200"
+                        ></span
+                    ></span>
+                </a>
+            </div>
+
+            <div class="order-5 rounded-md">
+                <div
+                    class="relative w-full h-full overflow-hidden group rounded-md"
+                >
+                    <img
+                        src="images/cell-bg.jpg"
+                        alt="Background"
+                        class="absolute inset-0 object-cover w-full h-full transition-all duration-500 ease-in-out"
+                    />
+                    <div class="absolute inset-0 bg-black/40"></div>
+                </div>
+            </div>
+
+            <div
+                class="order-6 bg-red-200 group relative z-0 overflow-hidden overflow-x-hidden rounded-md h-full text-neutral-50 transition hover:scale-105 duration-400 hover:drop-shadow-2xl hover:z-40"
+            >
+                <a href="{{ prefix }}/contact" class="w-full">
+                    <div class="grid place-items-center h-full z-10">
+                        <h2
+                            class="text-2xl md:text-5xl font-black text-white tracking-widest drop-shadow-lg select-none z-10"
+                        >
+                            CONTACT
+                        </h2>
+                    </div>
+                    ><span class="absolute inset-0 overflow-hidden rounded-md"
+                        ><span
+                            class="absolute left-0 aspect-square w-full origin-center md:origin-bottom-right translate-x-full rounded-full bg-blue-500 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-200"
+                        ></span
+                    ></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock content %}

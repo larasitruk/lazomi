@@ -1,14 +1,24 @@
 +++
-title = "Portfolio | Lazomi"
+title = "Portfolio"
 description = "Lazomi is an artist based in Coimbra, Portugal. Creates embroidered tshirts, paintings, acquarel. This is her portfolio"
 lang = "en"
 +++
+
+### Wander to Wonder
+
+<div class="slideshow">
 
 ![portfolio image](/images/portfolio-1.JPG)
 
 ![portfolio image](/images/portfolio-2.JPG)
 
+</div>
+
+<div class="slideshow">
+
 ![portfolio image](/images/portfolio-3.JPG)
+
+</div>
 
 ![portfolio image](/images/portfolio-4.JPG)
 
