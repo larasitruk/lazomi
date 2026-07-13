@@ -9,7 +9,7 @@ build:
 
 # Serve site
 serve:
-    miniserve --index index.html -q public --pretty-urls
+    miniserve --index index.html -q public --pretty-urls --interfaces 0.0.0.0
 
 # Watch (except gitignore) and rebuild
 watch:
