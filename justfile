@@ -29,3 +29,11 @@ image__compress:
         # 3. '| cjpeg' receives it, compresses it, and saves it
         magick "$file" -resize 800x TGA:- | cjpeg -quality 80 > "static/images/$filename"
     done
+
+image__vectorize:
+    magick processing/sealove_thin_tshirt.png -threshold 60% processing/intermediate__sealove_thin_tshirt.pbm
+    potrace -b svg processing/intermediate__sealove_thin_tshirt.pbm -o processing/final__sealove_thin_tshirt.svg
+
+# Optimize a JPEG, it's saved to a different path to avoid overrideing the original
+image_optimize path:
+    cjpeg -progressive -quality 80 {{ path }} > {{ path }}.opt.jpg

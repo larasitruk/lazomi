@@ -57,6 +57,7 @@
               watchexec
               mozjpeg
               imagemagick
+              potrace
             ];
 
             shellHook = ''
