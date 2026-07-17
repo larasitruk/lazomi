@@ -4,16 +4,32 @@ description = "Lazomi is an artist based in Coimbra, Portugal. Creates embroider
 lang = "en"
 +++
 
-### Nature Love
+# Mission
+Hi! My name is Lara Sitruk and I'm a Portugal-based visual artist whose work is shaped by a profound love and appreciation for nature, culture and everything in between. 
 
-My deep love and respect for nature are woven directly into my art. Many of my creations feature an imaginary animal world, which is my way of showing admiration for the natural world that has always been a refuge for me through both happy and challenging times.
+At the heart of my artwork is a profound exploration of the interconnected relationship between humanity and the wild. 
 
-I do my best to embrace a vegan and low-waste lifestyle, celebrating the beauty of the animals, insects, plants, and trees around us. This mindset has sparked even deeper creativity in my life, whether I'm in the kitchen experimenting with a new vegan recipe or in my studio breathing new life into discarded materials.
-
-### Upcycling
-
-When I was little, my eyes were always glued to the ground, searching for hidden treasures. I’d build tiny characters out of scrap metal I found on the street or twigs and flowers from the forest. Later, while living in Amsterdam, I would rescue discarded furniture and frames, painting them to give them a second life. Now, here in Portugal, my favorite way to upcycle is taking vintage clothing and transforming it with hand embroidery or a fresh pass on my sewing machine.
+By treating all living things - including rivers and mountains - as sacred, my art serves as a grounding call for a more balanced and humble relationship with the earth.
 
 ### Sustainability
+In line with my vision to be kind to our planet and appreciate our nature, comes the responsibility to work as sustainable as possible. 
 
-My dedication to the earth means I strive to maintain a sustainable workspace. I ensure that both my art and its packaging are as eco-friendly as possible. This commitment is a core pillar of Lazomi, as staying aligned with my values is what allows my creative work to truly thrive.
+My art is printed on eco-friendly paper. It's printed and packaged in the nearest location where the order is placed, to reduce the eco-footprint, eliminating plastic completely where possible. 
+
+The t-shirts are all made of organic cotton, soft and durable. 
+
+### Upcycling
+A big passion of mine is creating new things out of old things, giving materials that would have become waste a new life. 
+
+It's a creative challenge (and so much fun) to see the potential of a second-hand garment with just some sowing or an embroidery, or imagining a new woven seat for an old discarded wooden chair. 
+
+Most things just need a little (or a lot) of love.
+
+### Animal wellfare
+Besides reducing my footprint and waste for a better environment, I care deeply about animals, which is reflected in my art and most materials I use. 
+
+It's essential that, with my love for all beings, no animals are harmed in my work.
+This goes for both my professional as private life.
+
+Here are some of my harmless recipes I'd like to share for some creativity in the kitchen:
+https://www.reciperium.com/lara
