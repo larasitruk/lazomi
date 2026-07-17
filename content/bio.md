@@ -13,9 +13,9 @@ After working with documentary film creators for many years, supporting their st
 
 I believe art should be playful. I love to try out new techniques, ideas, materials and to experiment with combinations. 
 
-Playing, creating and letting my imagination run wild help me see more beauty, kindness and silver linings around me.
+Playing, creating and letting my imagination run wild help me see more beauty, kindness and silver linings in the world around me.
 
 ### Lazomi
 What started as a small dream and love for tiny t-shirt embroideries of animals, grew into a full-time dedication. 
 
-It never gets old to see a sketch turn into a painting or drawing, which ends up somewhere in a cosy living room. Or as someone's favorite wearable art, since I love to get my work printed on organic, colorful t-shirts.
+It never gets old to see a sketch turn into a painting or drawing, which ends up somewhere in a cosy living room. Or as someone's favorite wearable art, since I like to get my work printed on organic, colorful t-shirts.

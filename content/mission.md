@@ -7,7 +7,7 @@ lang = "en"
 # Mission
 Hi! My name is Lara Sitruk and I'm a Portugal-based visual artist whose work is shaped by a profound love and appreciation for nature, culture and everything in between. 
 
-At the heart of my artwork is a profound exploration of the interconnected relationship between humanity and the wild. 
+At the heart of my artwork is a deep exploration of the interconnected relationship between humanity and the wild. 
 
 By treating all living things - including rivers and mountains - as sacred, my art serves as a grounding call for a more balanced and humble relationship with the earth.
 
@@ -32,4 +32,4 @@ It's essential that, with my love for all beings, no animals are harmed in my wo
 This goes for both my professional as private life.
 
 Here are some of my harmless recipes I'd like to share for some creativity in the kitchen:
-https://www.reciperium.com/lara
+[www.reciperium.com/lara](https://www.reciperium.com/lara)
