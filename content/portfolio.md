@@ -28,7 +28,7 @@ lang = "en"
 
 </div>
 
-## Jardim ao Luar
+## Jardim Ao Luar
 
 <div class="slideshow">
 
@@ -63,11 +63,3 @@ lang = "en"
 ![portfolio image](/images/portfolio-21.JPG)
 
 </div>
-
-
-
-
-
-
-
-
