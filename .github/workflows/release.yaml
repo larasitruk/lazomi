@@ -27,7 +27,8 @@ jobs:
           primary-key: nix-${{ runner.os }}-${{ hashFiles('**/*.nix', '**/flake.lock') }}
 
       - run: |
-          nix build --fallback --system x86_64-linux --option sandbox relaxed .#site --json --out-link result
+          nix build --accept-flake-config \
+            --fallback --system x86_64-linux --option sandbox relaxed .#site --json --out-link result
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
