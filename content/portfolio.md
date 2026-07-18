@@ -8,11 +8,11 @@ lang = "en"
 
 <div class="slideshow">
 
+![portfolio image](/images/portfolio-16.JPG)
+
 ![portfolio image](/images/portfolio-5.JPG)
 
 ![portfolio image](/images/portfolio-8.JPG)
-
-![portfolio image](/images/portfolio-16.JPG)
 
 ![portfolio image](/images/portfolio-18.JPG)
 

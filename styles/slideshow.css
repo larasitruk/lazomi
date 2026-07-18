@@ -1,0 +1,103 @@
+/* =========================================
+   CORE CSS-ONLY SLIDER (No JS required)
+   ========================================= */
+
+/* The main scrollable container */
+.slideshow {
+  display: flex;
+  /* Leave auto for when JS is disabled */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 1rem;
+
+  /* Firefox scrollbar styling */
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+/* Webkit scrollbar styling (Chrome/Safari/Edge) */
+.slideshow::-webkit-scrollbar {
+  height: 8px;
+}
+
+.slideshow::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.slideshow::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.slideshow::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* The individual slides (Markdown 'p' tags) */
+.slideshow p {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The images */
+.slideshow img {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  display: block;
+}
+
+
+/* =========================================
+   JS PROGRESSIVE ENHANCEMENT (Buttons)
+   ========================================= */
+
+/* The wrapper dynamically created by JS */
+.slideshow-wrapper {
+  position: relative;
+  display: block;
+}
+
+/* Base styles for the injected buttons */
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 5px;
+  z-index: 10;
+  transition: background-color 0.2s ease;
+}
+
+.slide-btn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Specific button positioning */
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* Hides the scrollbar but keeps touch swiping active */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Opera */
+}

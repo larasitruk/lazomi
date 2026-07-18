@@ -5,6 +5,7 @@ update:
 # Build the website
 build:
     tailwindcss -i ./styles/input.css -o static/style.css --minify
+    tailwindcss -i ./styles/slideshow.css -o static/slideshow.min.css --minify
     sukr
 
 # Serve site

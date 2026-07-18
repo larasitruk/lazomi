@@ -141,6 +141,7 @@ _site
 .direnv
 public
 static/style.css
+static/slideshow.min.css
 result
 
 # original images
