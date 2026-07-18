@@ -26,6 +26,144 @@
         
     </head>
     <body>
+        <script>
+// Check the URL for the debug query parameter
+const urlParams = new URLSearchParams(window.location.search);
+
+if (urlParams.get('debug') === 'true') {
+  // Create a wrapper container so moving from button to tooltip keeps it open
+  const container = document.createElement('div');
+  Object.assign(container.style, {
+    position: 'fixed',
+    bottom: '20px',
+    right: '20px',
+    zIndex: '9999',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-end', // Aligns both to the right
+    gap: '10px'
+  });
+  document.documentElement.appendChild(container);
+
+  // Create the floating tooltip
+  const tooltip = document.createElement('div');
+  Object.assign(tooltip.style, {
+    padding: '12px',
+    backgroundColor: '#0f172a',
+    color: '#a7f3d0',
+    fontFamily: 'monospace',
+    fontSize: '13px',
+    borderRadius: '6px',
+    whiteSpace: 'pre',
+    opacity: '0',
+    transform: 'translateY(10px)',
+    transition: 'opacity 0.2s, transform 0.2s',
+    boxShadow: '0 4px 6px rgba(0,0,0,0.3)',
+    pointerEvents: 'none' // Hidden by default so it doesn't block clicks when invisible
+  });
+
+  // Append tooltip to the page
+  container.appendChild(tooltip);
+
+  // Create the button element
+  const colorButton = document.createElement('button');
+  colorButton.textContent = 'Randomize Colors';
+  Object.assign(colorButton.style, {
+    padding: '12px 20px',
+    backgroundColor: '#1f2937',
+    color: '#ffffff',
+    border: 'none',
+    borderRadius: '8px',
+    cursor: 'pointer',
+    fontFamily: 'sans-serif',
+    fontWeight: 'bold',
+    boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
+  });
+  container.appendChild(colorButton);
+
+  // Helper function to read the current variables and update the tooltip text
+  const showTooltip = () => {
+    // getComputedStyle gets the actual applied variables, not just inline ones
+    const rootStyles = getComputedStyle(document.documentElement);
+    const surround = rootStyles.getPropertyValue('--color-surround').trim() || 'not set';
+    const box = rootStyles.getPropertyValue('--color-box').trim() || 'not set';
+    const boxInner = rootStyles.getPropertyValue('--color-box-inner').trim() || 'not set';
+    const anim = rootStyles.getPropertyValue('--color-box-animation').trim() || 'not set';
+    const primary = rootStyles.getPropertyValue('--color-primary').trim() || 'not set';
+    const secondary = rootStyles.getPropertyValue('--color-secondary').trim() || 'not set';
+
+    tooltip.textContent = `@theme {\n  --color-primary: ${primary}\n  --color-secondary: ${secondary}\n  --color-surround: ${surround};\n  --color-box: ${box};\n  --color-box-inner: ${boxInner};\n  --color-box-animation: ${anim};\n}`;
+    tooltip.style.opacity = '1';
+    tooltip.style.transform = 'translateY(0)';
+    tooltip.style.pointerEvents = 'auto';
+  };
+
+  const hideTooltip = () => {
+    tooltip.style.opacity = '0';
+    tooltip.style.transform = 'translateY(10px)';
+    tooltip.style.pointerEvents = 'none';
+  };
+  // Desktop Hover Events
+  container.addEventListener('mouseenter', showTooltip);
+  container.addEventListener('mouseleave', hideTooltip);
+
+  // Mobile "Tap Out" Event
+  // Listens for taps anywhere on the document. If the tap is NOT inside our container, hide it.
+  document.addEventListener('touchstart', (e) => {
+    if (!container.contains(e.target)) {
+      hideTooltip();
+    }
+  });
+
+  // Helper function to generate a random hex color
+  const getRandomHexColor = () => {
+    return '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+  };
+
+  // Helper to generate HSL colors with specific lightness boundaries
+  const getRandomHsl = (minLightness, maxLightness) => {
+    const h = Math.floor(Math.random() * 360); // Hue: 0 to 360 (any color)
+    const s = Math.floor(Math.random() * 50) + 50; // Saturation: 50% to 100% (keeps them vibrant)
+    const l = Math.floor(Math.random() * (maxLightness - minLightness + 1)) + minLightness;
+
+    return `hsl(${h}, ${s}%, ${l}%)`;
+  };
+
+  // Getting a random number between two values
+  function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+
+  // Add the click event listener
+  colorButton.addEventListener('click', () => {
+    const root = document.documentElement;
+
+    // Randomly decide if the main box should be dark or light
+    const isBoxDark = Math.random() > 0.5;
+    // Force strict separation in Lightness (L) values
+    const boxColor = isBoxDark ? getRandomHsl(10, 35) : getRandomHsl(75, 95);
+    const primaryColor = isBoxDark ? getRandomHsl(75, 85) : getRandomHsl(10, 35);
+    const innerColor = getRandomHsl(75, 95);
+
+    // Apply the variables
+    root.style.setProperty('--color-box', boxColor);
+    root.style.setProperty('--color-box-inner', innerColor);
+    root.style.setProperty('--color-primary', primaryColor);
+
+    const isSurroundDark = Math.random() > 0.5;
+    const surroundColor = isBoxDark ? getRandomHsl(10, 35) : getRandomHsl(75, 95);
+    const secondaryColor = isBoxDark ? getRandomHsl(75, 95) : getRandomHsl(10, 35);
+    root.style.setProperty('--color-surround', surroundColor);
+    root.style.setProperty('--color-secondary', secondaryColor);
+
+    root.style.setProperty('--color-box-animation', getRandomHsl(30, 60));
+
+    // Update the tooltip immediately so you don't have to move the mouse away and back
+    showTooltip();
+  });
+}
+</script>
+
         
 <main class="grid grid-rows-1 h-screen md:pb-4">
     <div
@@ -49,12 +187,12 @@
                     >
                         <div>
                             <h1
-                                class="text-6xl md:text-8xl font-black text-white tracking-widest drop-shadow-lg select-none"
+                                class="text-6xl md:text-8xl font-black text-primary  tracking-widest drop-shadow-lg select-none"
                             >
-                                <a href="./">Lazomi</a>
+                                <a href="./" class="drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">Lazomi</a>
                             </h1>
                             <h2
-                                class="text-lg md:text-2xl font-black text-white text-center"
+                                class="text-lg md:text-2xl font-black text-primary text-center drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]"
                             >
                                 - Art inspired by nature -
                             </h2>
@@ -63,7 +201,7 @@
                 </div>
             </div>
             <div
-                class="bg-red-200 order-1 rounded-md transition hover:scale-105 duration-400 hover:drop-shadow-2xl hover:z-40 active:scale-95"
+                class="bg-[#782a39] order-1 rounded-md transition hover:scale-105 duration-400 hover:drop-shadow-2xl hover:z-40 active:scale-95"
             >
                 <a href="./bio">
                     <div
@@ -79,7 +217,7 @@
                             class="absolute inset-0 flex items-center justify-center"
                         >
                             <h2
-                                class="text-4xl md:text-6xl font-black text-white tracking-widest drop-shadow-lg select-none"
+                                class="text-4xl md:text-6xl font-black text-box-inner tracking-widest drop-shadow-lg select-none"
                             >
                                 BIO
                             </h2>
@@ -89,7 +227,7 @@
             </div>
 
             <div
-                class="order-2 bg-red-200 group relative z-0 overflow-hidden overflow-x-hidden rounded-md h-full text-neutral-50 transition hover:scale-105 duration-400 hover:drop-shadow-2xl hover:z-40 active:scale-95"
+                class="order-2 bg-box group relative z-0 overflow-hidden overflow-x-hidden rounded-md h-full text-neutral-50 transition hover:scale-105 duration-400 hover:drop-shadow-2xl hover:z-40 active:scale-95"
             >
                 <a
                     href="https://www.etsy.com/shop/LazomiCreative"
@@ -99,20 +237,20 @@
                 >
                     <div class="grid place-items-center h-full z-10">
                         <h2
-                            class="text-2xl md:text-6xl font-black text-white tracking-widest drop-shadow-lg select-none z-10"
+                            class="text-2xl md:text-6xl font-black text-box-inner tracking-widest drop-shadow-lg select-none z-10"
                         >
                             SHOP
                         </h2>
                     </div>
                     ><span class="absolute inset-0 overflow-hidden rounded-md"
                         ><span
-                            class="absolute left-0 aspect-square w-full origin-center md:origin-top-right translate-x-full rounded-full bg-blue-500 transition-all duration-500 group-hover:translate-x-0 group-hover:scale-200"
+                            class="absolute left-0 aspect-square w-full origin-center md:origin-top-right translate-x-full rounded-full bg-box-animation transition-all duration-500 group-hover:translate-x-0 group-hover:scale-200"
                         ></span
                     ></span>
                 </a>
             </div>
             <div
-                class="bg-red-200 order-6 rounded-md md:order-3 transition hover:scale-105 duration-400 hover:drop-shadow-2xl hover:z-40 active:scale-95"
+                class="order-6 rounded-md md:order-3 transition hover:scale-105 duration-400 hover:drop-shadow-2xl hover:z-40 active:scale-95"
             >
                 <a href="./portfolio">
                     <div
@@ -128,7 +266,7 @@
                             class="absolute inset-0 flex items-center justify-center"
                         >
                             <h2
-                                class="text-xl md:text-4xl font-black text-white tracking-widest drop-shadow-lg select-none"
+                                class="text-xl md:text-4xl font-black text-box-inner tracking-widest drop-shadow-lg select-none"
                             >
                                 PORTFOLIO
                             </h2>
@@ -137,19 +275,19 @@
                 </a>
             </div>
             <div
-                class="order-4 bg-red-200 group relative z-0 overflow-hidden overflow-x-hidden rounded-md h-full text-neutral-50 transition hover:scale-105 duration-200 hover:drop-shadow-2xl hover:z-20 active:scale-95"
+                class="order-4 bg-box group relative z-0 overflow-hidden overflow-x-hidden rounded-md h-full text-neutral-50 transition hover:scale-105 duration-200 hover:drop-shadow-2xl hover:z-20 active:scale-95"
             >
                 <a href="./mission" class="w-full">
                     <div class="grid place-items-center h-full z-10">
                         <h2
-                            class="text-2xl md:text-5xl font-black text-white tracking-widest drop-shadow-lg select-none z-10"
+                            class="text-2xl md:text-5xl font-black text-box-inner tracking-widest  select-none z-10"
                         >
                             MISSION
                         </h2>
                     </div>
                     ><span class="absolute inset-0 overflow-hidden rounded-md"
                         ><span
-                            class="absolute left-0 aspect-square w-full origin-center md:origin-top-left translate-x-full rounded-full bg-blue-500 transition-all duration-500 group-hover:translate-x-0 group-hover:scale-200"
+                            class="absolute left-0 aspect-square w-full origin-center md:origin-top-left translate-x-full rounded-full bg-box-animation transition-all duration-500 group-hover:translate-x-0 group-hover:scale-200"
                         ></span
                     ></span>
                 </a>
@@ -169,19 +307,19 @@
             </div>
 
             <div
-                class="order-6 bg-red-200 group relative z-0 overflow-hidden overflow-x-hidden rounded-md h-full text-neutral-50 transition hover:scale-105 duration-400 hover:drop-shadow-2xl hover:z-40 active:scale-95"
+                class="order-6 bg-box group relative z-0 overflow-hidden overflow-x-hidden rounded-md h-full text-neutral-50 transition hover:scale-105 duration-400 hover:drop-shadow-2xl hover:z-40 active:scale-95"
             >
                 <a href="./contact" class="w-full">
                     <div class="grid place-items-center h-full z-10">
                         <h2
-                            class="text-2xl md:text-5xl font-black text-white tracking-widest drop-shadow-lg select-none z-10"
+                            class="text-2xl md:text-5xl font-black text-box-inner tracking-widest drop-shadow-lg select-none z-10"
                         >
                             CONTACT
                         </h2>
                     </div>
                     ><span class="absolute inset-0 overflow-hidden rounded-md"
                         ><span
-                            class="absolute left-0 aspect-square w-full origin-center md:origin-bottom-right translate-x-full rounded-full bg-blue-500 transition-all duration-500 group-hover:translate-x-0 group-hover:scale-200"
+                            class="absolute left-0 aspect-square w-full origin-center md:origin-bottom-right translate-x-full rounded-full bg-box-animation transition-all duration-500 group-hover:translate-x-0 group-hover:scale-200"
                         ></span
                     ></span>
                 </a>
