@@ -1,13 +1,23 @@
 @import "tailwindcss";
 
+@theme {
+    --color-surround: #8a3434;
+    --color-box: var(--color-red-200);
+    --color-box-inner: var(--color-white);
+    --color-box-animation: var(--color-blue-500);
+    --color-primary: var(--color-pink-700);
+    --color-secondary: var(--color-white);
+}
+
 @layer components {
     body {
-        @apply bg-[#8a3434] text-amber-50;
+        @apply bg-surround text-amber-50;
+        overflow-x: hidden;
         /*#8a3434*/
     }
 
     .topbar {
-        @apply sticky top-0 z-50 bg-red-200 backdrop-blur-sm shadow-md;
+        @apply sticky top-0 z-50 bg-box backdrop-blur-sm shadow-md;
     }
 
     .topbar-content {
@@ -23,7 +33,7 @@
     }
 
     .brand {
-        @apply font-bold text-xl tracking-tighter text-pink-700;
+        @apply font-bold text-xl tracking-tighter text-primary;
     }
 
     @keyframes rotate {
@@ -43,7 +53,7 @@
     /****** MARKDOWN ******/
     /**********************/
     .markdown {
-        @apply mx-auto max-w-3xl px-4;
+        @apply mx-auto max-w-3xl px-4 text-secondary;
 
         h1,
         h2,
@@ -170,7 +180,7 @@
         height: 11px;
         top: 35%;
         right: -6px;
-        --tx: 18px;
+        --tx: 5px;
         --ty: -10px;
         animation-delay: 0.4s;
     }
@@ -179,7 +189,7 @@
         height: 9px;
         top: 65%;
         right: -4px;
-        --tx: 15px;
+        --tx: 5px;
         --ty: 0px;
         animation-delay: 1.3s;
     }
