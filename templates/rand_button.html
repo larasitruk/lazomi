@@ -64,7 +64,7 @@ if (urlParams.get('debug') === 'true') {
     const primary = rootStyles.getPropertyValue('--color-primary').trim() || 'not set';
     const secondary = rootStyles.getPropertyValue('--color-secondary').trim() || 'not set';
 
-    tooltip.textContent = `@theme {\n  --color-primary: ${primary}\n  --color-secondary: ${secondary}\n  --color-surround: ${surround};\n  --color-box: ${box};\n  --color-box-inner: ${boxInner};\n  --color-box-animation: ${anim};\n}`;
+    tooltip.textContent = `@theme {\n  --color-primary: ${primary};\n  --color-secondary: ${secondary};\n  --color-surround: ${surround};\n  --color-box: ${box};\n  --color-box-inner: ${boxInner};\n  --color-box-animation: ${anim};\n}`;
     tooltip.style.opacity = '1';
     tooltip.style.transform = 'translateY(0)';
     tooltip.style.pointerEvents = 'auto';
