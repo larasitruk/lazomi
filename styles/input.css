@@ -1,13 +1,23 @@
 @import "tailwindcss";
 
-@theme {
+/* @theme {
     --color-surround: #8a3434;
     --color-box: var(--color-red-200);
     --color-box-inner: var(--color-white);
     --color-box-animation: var(--color-blue-500);
     --color-primary: var(--color-pink-50);
     --color-secondary: var(--color-white);
+} */
+
+@theme { 
+--color-primary: hsl(156, 87%, 76%) 
+--color-secondary: hsl(196, 80%, 77%) 
+--color-surround: hsl(269, 97%, 80%); 
+--color-box: hsl(167, 88%, 30%); 
+--color-box-inner: hsl(269, 97%, 80%); 
+--color-box-animation: hsl(156, 87%, 76%); 
 }
+
 
 @layer components {
     body {
