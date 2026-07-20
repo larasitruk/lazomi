@@ -18,12 +18,6 @@ lang = "en"
 
 ![portfolio image](/images/portfolio-20.JPG)
 
-![portfolio image](/images/portfolio-17.JPG)
-
-![portfolio image](/images/portfolio-15.JPG)
-
-![portfolio image](/images/portfolio-3.JPG)
-
 ![portfolio image](/images/portfolio-7.JPG)
 
 </div>
@@ -42,7 +36,7 @@ lang = "en"
 
 </div>
 
-### Wander & Wonder
+## Wander & Wonder
 
 <div class="slideshow">
 
