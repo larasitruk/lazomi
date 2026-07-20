@@ -12,7 +12,7 @@
 @theme { 
 --color-primary: hsl(156, 87%, 76%); 
 --color-secondary: hsl(167, 88%, 30%); 
---color-surround: hsl(269, 97%, 80%); 
+--color-surround: hsl(265, 75%, 0%); 
 --color-box: hsl(167, 88%, 30%); 
 --color-box-inner: hsl(269, 97%, 80%); 
 --color-box-animation: hsl(156, 87%, 76%); 
