@@ -9,13 +9,14 @@
     --color-secondary: var(--color-white);
 } */
 
-@theme { 
---color-primary: hsl(156, 87%, 76%); 
---color-secondary: hsl(167, 88%, 30%); 
---color-surround: hsl(265, 75%, 90%); 
---color-box: hsl(167, 88%, 30%); 
---color-box-inner: hsl(269, 97%, 80%); 
---color-box-animation: hsl(156, 87%, 76%); 
+@theme {
+    --color-primary: hsl(156, 87%, 76%);
+    --color-secondary: hsl(167, 88%, 30%);
+    --color-surround: hsl(265, 75%, 90%);
+    --color-box: hsl(167, 88%, 30%);
+    --color-box-inner: hsl(269, 97%, 80%);
+    --color-box-animation: hsl(156, 87%, 76%);
+    --font-title: "Sniglet", system-ui;
 }
 
 
@@ -43,7 +44,7 @@
     }
 
     .brand {
-        @apply font-bold text-xl tracking-tighter text-primary;
+        @apply font-title text-xl tracking-tighter text-primary;
     }
 
     @keyframes rotate {
@@ -70,27 +71,27 @@
         h3,
         h4,
         h5 {
-            @apply scroll-mt-20 text-center;
+            @apply scroll-mt-20 text-center font-title;
         }
 
         h1 {
-            @apply text-4xl font-bold mt-12 mb-6;
+            @apply text-5xl mt-12 mb-6;
         }
 
         h2 {
-            @apply text-3xl font-bold mt-10 mb-5;
+            @apply text-4xl mt-10 mb-5;
         }
 
         h3 {
-            @apply text-2xl font-bold mt-8 mb-4;
+            @apply text-3xl mt-8 mb-4;
         }
 
         h4 {
-            @apply text-xl font-bold mt-6 mb-3;
+            @apply text-2xl mt-6 mb-3;
         }
 
         h5 {
-            @apply text-lg font-bold mt-4 mb-2;
+            @apply text-xl mt-4 mb-2;
         }
 
         a {

@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{{ title }} | {{ config.title }}</title>
-        <link rel="stylesheet" href="{{ prefix }}/style.css" />
+
         <link rel="canonical" href="{{ config.base_url }}{{ page_path }}" />
         <meta
             name="description"
@@ -26,6 +26,12 @@
         {% elif config.description %}
         <meta property="og:description" content="{{ config.description }}" />
         {% endif %}
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=sniglet:400,800" rel="stylesheet" />
+
+        <!-- STYLES -->
+        <link rel="stylesheet" href="{{ prefix }}/style.css" />
     </head>
     <body>
         {% include "rand_button.html" %}
