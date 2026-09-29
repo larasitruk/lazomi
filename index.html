@@ -21,6 +21,7 @@
             property="og:type"
             content="website"
         />
+        <link rel="icon" type="image/svg+xml" href="logo-sm.svg">
         
         <meta property="og:description" content="Lazomi is an artist based in Coimbra, Portugal. Creates embroidered tshirts, paintings, acquarel." />
         
@@ -191,11 +192,20 @@ if (urlParams.get('debug') === 'true') {
                     <div
                         class="absolute inset-0 flex items-center justify-center"
                     >
-                        <div>
+                        <div class="flex flex-col justify-center items-center">
                             <h1
-                                class="text-6xl md:text-8xl font-title text-primary tracking-widest drop-shadow-lg select-none"
+                                class="flex gap-4 items-center text-6xl md:text-8xl font-title text-primary tracking-widest drop-shadow-lg select-none"
                             >
-                                <a href="./" class="drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]">Lazomi</a>
+                                <div
+                                    class="h-20 w-20 bg-primary mask-[url('logo.svg')] mask-contain mask-no-repeat mask-center text-center"
+                                    role="img"
+                                    aria-label="Lazomi Logo"
+                                ></div>
+                                <a
+                                    href="./"
+                                    class="drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]"
+                                    >Lazomi</a
+                                >
                             </h1>
                             <h2
                                 class="text-lg md:text-2xl font-title text-primary text-center drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)]"
