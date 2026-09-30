@@ -1,5 +1,5 @@
 +++
-title = "Lazomi"
+title = "Welcome"
 description = "Lazomi is an artist based in Coimbra, Portugal. Creates embroidered tshirts, paintings, acquarel."
 lang = "en"
 template = "home.html"
